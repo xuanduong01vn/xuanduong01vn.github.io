@@ -316,6 +316,7 @@ hr{
   width: 50%;
   height: 200px;
   padding: 8px;
+  box-sizing: border-box;
 }
 
 
