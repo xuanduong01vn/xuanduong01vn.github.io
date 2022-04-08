@@ -185,9 +185,7 @@ hr{
 .active>a{
   color: var(--light-color);
 }
-.active>a>svg{
-  margin-right: 16px;
-}
+
 #content-section{
   width: 100%;
   margin-left: 280px;
@@ -719,8 +717,11 @@ hr{
     transition: 0.2s;
    }
    #drop-down svg{
-    top: 24px;
+    top: 34px;
     height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
 
   .header-section{
