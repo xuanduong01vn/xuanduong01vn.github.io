@@ -199,6 +199,7 @@ hr{
   color: var(--text-color);
   margin-bottom: 40px;
   line-height: 60px;
+  text-align: center;
 }
 
 #content-section>hr{
@@ -411,38 +412,42 @@ hr{
   margin: 0 auto;
   box-sizing: border-box;
   height: max-content;
-  padding: 48px 0;
+  padding: 48px 0 0;
 }
 
 .contact-list{
-  width: 100%;
+  margin: 0 auto;
+  width: max-content;
 }
 
 .contact-list>li{
   line-height: 44px;
+  margin-bottom: 16px;
 }
 
 .contact-list>li>a{
-  color: var(--primary-color);
+  color: var(--white-color);
   font-size: 24px;
   display: flex;
   align-items: center;
   transition: 0.2s;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+  border-radius: 20px;
+  box-sizing: border-box;
 }
-
-
 
 .contact-list>li>a>svg{
   width: 28px;
   height: 32px;
-  color: var(--light-color);
+  color: var(--white-color);
   margin-right: 24px;
   transition: 0.2s;
 }
 
 .footer-logo{
   width: 200px;
-  margin: 476px auto 0;
+  margin: 400px auto 0;
 }
 
 .footer-logo img{
@@ -600,11 +605,9 @@ hr{
   .download-btn a:hover{
     color: var(--light-color);
   }
-  .contact-list>li>a:hover>svg{
-    margin-right: 32px;
-  }
+  
   .contact-list>li>a:hover{
-    color: var(--light-color);
+    background-color: var(--text-color);
   }
 }
 
@@ -679,6 +682,10 @@ hr{
     width: 20px;
     height: 20px;
     margin-right: 18px;
+  }
+
+  .contact-list>li>a{
+    padding: 0 12px;
   }
 
 }
