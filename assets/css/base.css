@@ -1,20 +1,3 @@
-* {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-
-:root {
-  --white-color: #fff;
-  --black-color: #000;
-  --text-color: #496379;
-  --primary-color: #082032;
-  --eighty-percent: 80%;
-  --light-color:#FF4C29;
-  --gray-color:#ececec;
-}
 
 .grid {
   width: 1200px;
