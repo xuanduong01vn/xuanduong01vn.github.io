@@ -185,7 +185,9 @@ hr{
 .active>a{
   color: var(--light-color);
 }
-
+.active>a>svg{
+  margin-right: 16px;
+}
 #content-section{
   width: 100%;
   margin-left: 280px;
