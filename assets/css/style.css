@@ -383,13 +383,13 @@ hr{
 }
 
 .download-btn a{
-  background-color: var(--primary-color);
+  background-color: var(--light-color);
   padding: 12px 16px;
-  color: var(--text-color);
+  color: var(--white-color);
   font-size: 20px;
   width: max-content;
   box-sizing: border-box;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 12px;
   height: max-content;
   transition: 0.2s;
@@ -603,7 +603,7 @@ hr{
     opacity: 0.8;
   }
   .download-btn a:hover{
-    color: var(--light-color);
+    background-color: var(--text-color);
   }
   
   .contact-list>li>a:hover{
