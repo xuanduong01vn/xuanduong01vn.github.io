@@ -704,13 +704,13 @@ hr{
     margin-left: 0;
     z-index: 2;
     background-color: var(--white-color);
-    margin-top: 76px;
+    margin-top: 86px;
   }
   #drop-down{
     display: block;
     position: absolute;
     right: 24px;
-    top: 24px;
+    top: 29px;
     height: 28px;
     color: var(--light-color);
     cursor: pointer;
