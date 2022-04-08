@@ -95,6 +95,7 @@ a,div,strong,p{
   align-items: flex-start;
   margin-bottom: 16px;
   box-sizing: border-box;
+  border: 4px solid var(--text-color);
 }
 
 .my-avatar >img{
@@ -232,14 +233,20 @@ hr{
   margin-right: 64px;
 }
 .greeting-image{
-  width:40%;
+  margin-right: auto;
   overflow: hidden;
   height: 300px;
+  width: 300px;
+  min-height: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .greeting-image img{
+  width: 100%;
   height: 100%;
 }
 
@@ -451,35 +458,87 @@ hr{
   color: var(--light-color);
 }
 
-@media (min-width:1400px) {
+/* @media (min-width:1400px) {
   .greeting-image{
     justify-content: flex-start;
   }
-}
+} */
 
 @media (min-width:1251px) and (max-width:1600px) {
-  .greeting-text{
-    width: 70%;
-  }
   .greeting-image{
-    width: 30%;
-    height: 300px;
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    min-height: 280px;
   }
-
+}
+@media (min-width:1101px) and (max-width:1250px) {
+  .greeting-image{
+    width: 240px;
+    height: 240px;
+    min-width: 240px;
+    min-height: 240px;
+  }
+}
+@media (min-width:1024px) and (max-width:1100px) {
+  .greeting-image{
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+    min-height: 220px;
+  }
 }
 
-@media (min-width:1024px) and (max-width:1250px) {
-  .greeting-text{
-    width: 70%;
-  }
+@media (min-width:901px) and (max-width:1000px) {
   .greeting-image{
-    width: 30%;
-    height: 300px;
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    min-height: 280px;
   }
+}
+@media (min-width:801px) and (max-width:900px) {
+  .greeting-image{
+    width: 240px;
+    height: 240px;
+    min-width: 240px;
+    min-height: 240px;
+  }
+}
+
+@media (min-width:768px) and (max-width:800px) {
+  .greeting-image{
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+    min-height: 220px;
+  }
+}
+@media (min-width:401px) and (max-width:500px) {
+  .greeting-image{
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    min-height: 280px;
+  }
+}
+@media (min-width:301px) and (max-width:400px) {
+  .greeting-image{
+    width: 240px;
+    height: 240px;
+    min-width: 240px;
+    min-height: 240px;
+  }
+}
+
+
+@media (min-width:1024px) and (max-width:1250px) {
   .cv-container{
     padding: 24px 0;
   }
+  
 }
+
 @media (min-width:1151px) and (max-width:1250px) {
   #content-section>div>h1,#about-me h1{
     font-size: 40px;
@@ -489,6 +548,7 @@ hr{
   #content-section>div>h1,#about-me h1{
     font-size: 34px;
   }
+
 }
 
 @media (min-width:1400px) and (max-width:1550px) {
@@ -519,8 +579,6 @@ hr{
     width: 100%;
     height: 50%;
   }
-
-
 }
 
 @media (min-width:1024px) {
@@ -555,13 +613,10 @@ hr{
     font-size: 36px;
     letter-spacing: 0;
   }
-  .greeting-text{
-    width: 70%;
-  }
-  .greeting-image{
+  /* .greeting-image{
     width: 30%;
     height: 300px;
-  }
+  } */
 }
 
 @media (max-width:767px) {
@@ -599,8 +654,7 @@ hr{
     width: 100%;
   }
   .greeting-image{
-    width: 100%;
-    height: 300px;
+    margin: 0 auto;
   }
   #about-me ul>li{
     display: block;
