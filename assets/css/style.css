@@ -18,12 +18,12 @@
 }
  
 ::-webkit-scrollbar-thumb {
-  background: var(--light-color); 
+  background: var(--text-color); 
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--hover-color); 
+  background: var(--primary-color); 
 }
 a{
   text-decoration: none;
