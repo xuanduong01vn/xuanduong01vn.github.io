@@ -21,6 +21,9 @@
   border-radius: 3px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.6;
+}
 a{
   text-decoration: none;
 }
