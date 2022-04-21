@@ -6,6 +6,7 @@
   --eighty-percent: 80%;
   --light-color:#FF4C29;
   --gray-color:#ececec;
+  --hover-color:#ffa694;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  opacity: 0.6;
+  background: var(--hover-color); 
 }
 a{
   text-decoration: none;
