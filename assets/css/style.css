@@ -50,7 +50,7 @@ a,div,strong,p{
 
   /* The rule below is implemented in most browsers by now */
   user-select: none;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
   scroll-behavior: smooth;
 }
 
@@ -226,7 +226,8 @@ hr{
 }
 
 #about-me h1{
-  font-size: 48px;
+  font-size: 44px;
+  font-weight: 800;
   color: var(--text-color);
   margin-bottom: 16px;
   line-height: 60px;
@@ -562,7 +563,7 @@ hr{
 }
 @media (min-width:1024px) and (max-width:1150px) {
   #content-section>div>h1,#about-me h1{
-    font-size: 34px;
+    font-size: 31px;
   }
 
 }
@@ -624,7 +625,7 @@ hr{
 /* for Tablet  */
 @media (max-width: 1023px) and (min-width: 768px) {
   #content-section>div>h1,#about-me h1{
-    font-size: 36px;
+    font-size: 33px;
     letter-spacing: 0;
   }
   /* .greeting-image{
@@ -649,7 +650,7 @@ hr{
   }
 
   #about-me h1{
-    font-size: 36px;
+    font-size: 34px;
     letter-spacing: 0;
   }
   #about-me,#my-projects,#my-cv,#contact-me{
