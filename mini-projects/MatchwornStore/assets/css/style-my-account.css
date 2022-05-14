@@ -1,0 +1,425 @@
+.header-section{
+    position: relative;
+}
+
+.main-section{
+    margin: 60px auto;
+    display: flex;
+}
+
+.account-menu{
+    width:280px;
+    margin-right: 80px;
+    color: var(--text-color);
+}
+
+.account-menu h2{
+    margin-bottom: 32px;
+}
+
+.account-menu-list{
+    border: 1px solid var(--blur-color);
+    padding: 12px;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+.account-menu-item{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.account-menu-item a{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
+}
+.account-menu-item span{
+    pointer-events: none;
+}
+
+.account-menu-item svg{
+    margin-right: 12px;
+}
+
+.account-menu-item-selected{
+    background-color: var(--blur-color);
+}
+
+.account-menu-item:hover{
+    background-color: var(--gray-color);
+}
+.account-overview{
+    width: 100%;
+    color: var(--text-color);
+}
+
+.account-overview-item{
+    width: 100%;
+    min-height: 20vh;
+}
+
+.account-overview-box{
+    width: 100%;
+    margin-top: 36px;
+}
+
+.account-overview-line{
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.account-overview-line label{
+    position: absolute;
+    left: 16px;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.account-overview-line input{
+    width: 60%;
+    outline: none;
+    border: 1px solid var(--blur-color);
+    padding: 12px 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+input:focus{
+    border: 1px solid var(--text-color);
+}
+
+input:focus~label{
+    font-size: 12px;
+    top: 20%;
+    color: var(--blur-color);
+}
+
+.save-btn{
+    width: 60%;
+    background-color: var(--blur-color);
+    padding: 72px auto;
+    color: var(--white-color);
+    border: none;
+    font-size: 18px;
+    line-height: 2.8;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.account-cart-bar,.account-orders-filter-bar{
+    width: 100%;
+    display: flex;
+    background-color: var(--gray-color);
+    color: var(--text-color);
+    margin-bottom: 28px;
+}
+
+.account-cart-bar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 4px 0;
+}
+.account-cart-bar input{
+    color: var(--light-color);
+}
+
+.account-cart-bar div:first-child{
+    width: 5%;
+}
+.account-cart-bar div:nth-child(2){
+    width: 65%;
+}
+.account-cart-bar div:nth-child(3){
+    width: 15%;
+}
+.account-cart-bar div:last-child{
+    width: 15%;
+}
+
+.account-cart-overview{
+    background-color: var(--gray-color);
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.account-cart-overview>div:first-child{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-cart-products-overview{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-cart-products-image{
+    max-width: 120px;
+    height: 120px;
+    border: 1px solid var(--blur-color);
+    box-sizing: border-box;
+}
+
+.account-cart-products-image img{
+    width: 100%;
+}
+
+.account-cart-products-info{
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.account-cart-products-info div{
+    min-width: 100%;
+    margin: 4px 0;
+}
+
+.account-cart-products-nameset{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+}
+
+.account-cart-products-price{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.account-cart-action{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account-cart-action-btn{
+    padding: 8px 24px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.2s;
+    font-weight: 700;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.account-cart-action-btn:hover{
+    background-color: var(--text-color);
+    color: var(--gray-color);
+}
+
+.account-cart-total-bill{
+    width: 100%;
+    background-color: var(--gray-color);
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.account-cart-total-money{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+}
+
+.account-cart-total-money span{
+    color: var(--light-color);
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.account-cart-total-pay{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-cart-total-pay button{
+    padding: 12px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-weight: 700;
+    background-color: transparent;
+    transition: 0.2s;
+}
+.account-cart-total-pay button:hover{
+    background-color: var(--text-color);
+    color: var(--gray-color);
+}
+
+.state-order{
+    width: 20%;
+    font-size: 16px;
+    text-align: center;
+    line-height:2.4;
+    padding: 12px auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 4px solid var(--blur-color);
+    transition: 0.2s;
+}
+
+.state-order-selected{
+    border-bottom: 4px solid var(--light-color);
+    color: var(--light-color);
+}
+
+.amount-order{
+    pointer-events: none;
+}
+
+.no-cart-notify,.no-order-notify{
+    border: 1px solid var(--blur-color);
+    width: 100%;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 24px;
+    display: none;
+    box-sizing: border-box;
+}
+
+.no-cart-notify{
+    display: flex;
+    margin: 64px 0;
+}
+.no-order-notify-show{
+    display: flex;
+}
+
+.no-cart-notify svg,.no-order-notify svg{
+    margin-right: 24px;
+    height: 40px;
+}
+
+.account-order-overview{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--gray-color);
+}
+
+.account-order-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--blur-color);
+    padding-bottom: 4px;
+}
+
+.account-order-state{
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.account-order-products{
+    width: 100%;
+}
+
+.account-order-products-item{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--blur-color);
+    justify-content: space-between;
+}
+
+.account-order-products-overview{
+    width: 100%;
+    display: flex;
+}
+
+.account-order-products-image{
+    max-width: 120px;
+    height: 120px;
+    border: 1px solid var(--blur-color);
+    box-sizing: border-box;
+}
+
+.account-order-products-image img{
+    width: 100%;
+}
+
+.account-order-products-info{
+    padding: 0 20px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+.account-order-products-info div{
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.account-order-products-info div:first-child{
+    font-size: 18px;
+}
+.account-order-products-price{
+    min-width: 120px;
+    text-align: end;
+    margin-left: 20px;
+    color: var(--light-color);
+}
+.account-order-total-money{
+    text-align: right;
+    font-size: 28px;
+    padding: 12px 0;
+}
+
+.account-order-total-money span{
+    color: var(--light-color);
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.account-order-action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.account-order-action-btn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--text-color);
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 8px 48px;
+    cursor: pointer;
+}
+.account-order-action-btn:hover{
+    background-color: var(--text-color);
+    color: var(--gray-color);
+}

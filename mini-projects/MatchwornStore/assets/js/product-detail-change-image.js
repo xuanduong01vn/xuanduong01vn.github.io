@@ -1,5 +1,9 @@
-var ImageSlideItem= document.querySelectorAll(".product-image-slide-item");
+// Title page
+document.title=document.querySelector(".product-info-nameset").innerText;
 
+
+// Thay đổi ảnh show lên theo slide
+var ImageSlideItem= document.querySelectorAll(".product-image-slide-item");
 
 document.querySelector(".product-image-showed")
 

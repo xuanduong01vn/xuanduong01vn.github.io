@@ -1,0 +1,94 @@
+.header-section{
+    position: relative;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    margin: 240px auto;
+}
+
+.login-section{
+    width: 384px;
+    right: 50%;
+    border-right: 1px solid var(--blur-color);
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.login-container>a{
+    color: var(--blur-color);
+    transition: 0.2s;
+}
+.login-container>a:hover{
+    color: var(--text-color);
+}
+
+.main-section h1{
+    margin-bottom: 32px;
+}
+.main-section h3{
+    margin-bottom: 16px;
+}
+
+.register-section{
+    width: 384px;
+    left: 50%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.register-container p{
+    display: flex;
+}
+
+.register-container p input{
+    width: max-content;
+    margin-right: 8px;
+}
+
+.register-container p span{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.register-container p span a{
+    color: var(--text-color);
+    transition: 0.2s;
+}
+
+.register-container p span a:hover{
+    color: var(--light-color);
+}
+
+.main-section input{
+    width: 100%;
+    background-color: var(--gray-color);
+    border: 1px solid var(--blur-color);
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 2.0;
+    padding: 8px 16px;
+    margin: 8px 0;
+    outline: none;
+    transition: 0.2s;
+    
+
+}
+.main-section input:focus{
+    border: 1px solid var(--primary-color);
+}
+
+.main-section button{
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--gray-color);
+    padding: 8px auto;
+    box-sizing: border-box;
+    line-height: 2.4;
+}
+
