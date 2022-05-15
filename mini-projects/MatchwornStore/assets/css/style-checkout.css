@@ -144,7 +144,14 @@
     border: 1px solid var(--light-color);
     background-color: transparent;
     padding: 8px 40px;
+    transition: 0.2s;
 }
+
+.payment-method-action:hover{
+    background-color: var(--light-color);
+    color: var(--gray-color);
+}
+
 .payment-money-container{
     width: 100%;
     display: flex;
