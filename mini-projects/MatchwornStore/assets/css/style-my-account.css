@@ -170,6 +170,7 @@ input:focus~label{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .account-cart-products-image{
     max-width: 120px;
