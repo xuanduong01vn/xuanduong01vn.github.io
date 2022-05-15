@@ -3,16 +3,16 @@
     padding: 0;
     font-family: 'Nunito';
     -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none; /* Chrome/Safari */ 
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
 
-  /* The rule below is not implemented in browsers yet */
-  -o-user-select: none;
+    /* The rule below is not implemented in browsers yet */
+    -o-user-select: none;
 
-  /* The rule below is implemented in most browsers by now */
-  user-select: none;
-  scroll-behavior: smooth;
+     /* The rule below is implemented in most browsers by now */
+    user-select: none;
+    scroll-behavior: smooth;
 }
 button{
     cursor: pointer;
@@ -251,7 +251,7 @@ ul{
 .trailer-section{
     width:100%;
     margin-top: 120px;
-    height: 420px;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
