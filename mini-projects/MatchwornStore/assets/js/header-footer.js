@@ -24,25 +24,6 @@ serviceItemButton.forEach(function(item,index){
     }
 });
 
-
-// xử lý ẩn hiện filter
-
-document.querySelector(".filter-navbar h2").onclick=function(e){
-    e.target.classList.toggle("filter-navbar-open");
-}
-// click filter item
-
-document.querySelectorAll(".filter-item").forEach(function(item){
-    item.onclick= function(e){
-        if(document.querySelector(".filter-item-selected")){
-            document.querySelector(".filter-item-selected").classList.remove("filter-item-selected");
-        }
-        document.querySelector(".filter-navbar h2").classList.toggle("filter-navbar-open");
-        e.target.classList.add("filter-item-selected");
-    }
-});
-
-
 // xử lý ẩn hiện mini menu
 
 document.querySelector(".mini-menu-button").onclick = function(e){
