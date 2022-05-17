@@ -9,10 +9,8 @@
 }
 
 .login-section{
-    width: 384px;
     right: 50%;
     border-right: 1px solid var(--blur-color);
-    padding-right: 40px;
     box-sizing: border-box;
 }
 
@@ -32,9 +30,7 @@
 }
 
 .register-section{
-    width: 384px;
     left: 50%;
-    padding-left: 40px;
     box-sizing: border-box;
 }
 
@@ -90,5 +86,83 @@
     padding: 8px auto;
     box-sizing: border-box;
     line-height: 2.4;
+}
+
+@media (min-width:880px) {
+    .login-section{
+        width: 384px;
+        padding-right: 40px;
+    }
+
+    .main-section h1 svg{
+        display: none;
+        pointer-events: none;
+    }
+
+    .register-section{
+        width: 384px;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width:701px) and (max-width: 879px) {
+    .main-section{
+        display: block;
+        margin: 240px 120px;
+    }
+
+    .main-section h1{
+        margin: 0 auto 32px;
+        text-align: center;
+    }
+    .main-section h1 svg{
+        display: inline-block;
+        pointer-events: none;
+    }
+
+    .login-section{
+        border: none;
+        margin-bottom: 60px;
+    }
+
+    .section-heading~.container-box{
+        display: none;
+    }
+
+    .section-show~.container-box{
+        display: block;
+    }
+}
+@media (max-width: 700px) {
+    .main-section{
+        display: block;
+        margin: 240px 20px;
+    }
+    .main-section h1{
+        margin: 0 auto 32px;
+        text-align: center;
+    }
+
+    .main-section h1 svg{
+        display: inline-block;
+        pointer-events: none;
+    }
+
+    .main-section h3{
+        font-size: 16px;
+    }
+
+    .login-section{
+        border: none;
+        margin-bottom: 60px;
+    }
+
+    .section-heading~.container-box{
+        display: none;
+    }
+
+    .section-show~.container-box{
+        display: block;
+    }
 }
 

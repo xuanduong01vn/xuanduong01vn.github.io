@@ -695,12 +695,12 @@ ul{
         border: none;
     }
     
-    .mini-menu-container-list li:hover{
+    .mini-menu-container-item-btn-selected{
         background-color: var(--white-color);
         color: var(--text-color);
     } 
-    .mini-menu-container-list li:hover a{
-        color: var(--text-color);
+    .mini-menu-container-list>li:hover>a{
+        color: var(--light-color);
     } 
 
     .mini-account-section{
@@ -718,7 +718,7 @@ ul{
         display: block;
         width: 100%;
         cursor: pointer;
-        transition: 0.2s;
+        
     }
 
     .mini-account-section a{
