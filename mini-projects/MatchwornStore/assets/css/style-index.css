@@ -96,8 +96,8 @@ ul{
 }
 
 .mini-menu-button svg{
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     transition: 0.2s;
 }
 
@@ -665,7 +665,7 @@ ul{
         z-index: 50;
         background-color: var(--primary-color);
         width: 100%;
-        top: 92px;
+        top: 90px;
         margin: -10px;
         min-height: 100vh;
         transition: 0.2s;
@@ -689,7 +689,12 @@ ul{
         height: max-content;
         transition: 0.2s;
         border-top: 1px solid var(--text-color);
-    } 
+    }
+    
+    .mini-menu-container-list li:first-child,.mini-menu-container-list li:nth-child(2){
+        border: none;
+    }
+    
     .mini-menu-container-list li:hover{
         background-color: var(--white-color);
         color: var(--text-color);
@@ -713,6 +718,7 @@ ul{
         display: block;
         width: 100%;
         cursor: pointer;
+        transition: 0.2s;
     }
 
     .mini-account-section a{
@@ -720,14 +726,17 @@ ul{
         width: 50%;
         text-align: center;
         padding: 8px 12px;
-        margin: 0 1px;
         color: var(--text-color);
     }
+    .mini-account-section a:first-child{
+        margin-right: 2px;
+    }
 
-    .mini-menu-container-list span svg{
+    .mini-menu-container-item span svg{
         margin-left: 12px;
         height: 16px;
         pointer-events: none;
+        transition: 0.2s;
     }
 
     .mini-menu-container-item ul{
@@ -737,7 +746,11 @@ ul{
         display: none;
     }
 
-    .mini-menu-container-item-selected ul{
+    .mini-menu-container-item-selected span svg{
+        transform: rotateX(180deg);
+    }
+
+    .mini-menu-container-item-selected span~ul{
         display: flex;
     }
 
