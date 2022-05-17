@@ -33,10 +33,16 @@ document.querySelector(".mini-menu-button").onclick = function(e){
 
 document.querySelectorAll(".mini-menu-container-item-btn").forEach(function(item){
     item.onclick= function(e){
-        if(document.querySelector(".mini-menu-container-item-btn-selected")){
-            document.querySelector(".mini-menu-container-item-btn-selected").classList.remove("mini-menu-container-item-btn-selected");
+        if(e.target.classList.contains("mini-menu-container-item-btn-selected"))
+        {
+            e.target.classList.remove("mini-menu-container-item-btn-selected")
         }
-        e.target.classList.toggle("mini-menu-container-item-btn-selected");
+        else{
+            if(document.querySelector(".mini-menu-container-item-btn-selected")){
+                document.querySelector(".mini-menu-container-item-btn-selected").classList.toggle("mini-menu-container-item-btn-selected");
+            }
+            e.target.classList.add("mini-menu-container-item-btn-selected");
+        }
     }
 })
 

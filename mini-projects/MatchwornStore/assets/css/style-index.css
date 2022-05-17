@@ -737,6 +737,11 @@ ul{
         height: 16px;
         pointer-events: none;
         transition: 0.2s;
+        pointer-events: none;
+    }
+    
+    .mini-menu-container-item-btn-selected svg{
+        transform: rotateX(180deg);
     }
 
     .mini-menu-container-item-btn~.mini-menu-container-league-list{
@@ -750,15 +755,6 @@ ul{
         flex-wrap: wrap;
         background-color: var(--white-color);
     }
-
-
-    .mini-menu-container-item-selected .mini-menu-container-item-btn svg{
-        transform: rotateX(180deg);
-    }
-
-    /* .mini-menu-container-item-btn ~ .mini-menu-container-league-list{
-        display: flex;
-    } */
 
     .mini-menu-container-item{
         display: block;
