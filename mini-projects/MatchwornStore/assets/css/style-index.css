@@ -87,6 +87,20 @@ ul{
     cursor: pointer;
 }
 
+.mini-menu-button{
+    width: max-content;
+    height: max-content;
+    margin: auto 0;
+    color: var(--text-color);
+    display: none;
+}
+
+.mini-menu-button svg{
+    width: 44px;
+    height: 44px;
+    transition: 0.2s;
+}
+
 .account-section{
     display: flex;
     align-items: center;
@@ -106,6 +120,10 @@ ul{
     color: var(--light-color);
 }
 
+.mini-menu-container{
+    display: none;
+}
+
 .header-section-second{
     width: 100%;
     background-color: var(--primary-color);
@@ -113,8 +131,6 @@ ul{
 }
 
 .header-section-second-navbar{
-    /* width: 1240px;
-    margin: 0 auto; */
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -279,6 +295,10 @@ ul{
     min-width: max-content;
     padding: 12px 20px;
     display: block;
+}
+
+.filter-navbar h2 svg{
+    transform: rotateZ(270deg);
 }
 
 .filter-list{
@@ -602,15 +622,212 @@ ul{
         max-width: 100%;
         margin: 40px 10px;
     }
-    .filter-navbar h2{
+
+    .mini-menu-button{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .mini-menu-button svg{
+        pointer-events: none;
+    }
+
+    .mini-menu-button-open svg{
+        transform: rotateX(180deg);
+    }
+
+    .account-section{
         display: none;
     }
-    
-    .filter-item{
-        padding: 8px 0;
-        font-size: 16px;
+
+    .header-section-second-navbar{
+        justify-content: flex-end;
     }
+
+    .list-categories{
+        display: none;
+    }
+
+    .search-section{
+        width: 100%;
+    }
+    .search-section input{
+        width: 100%;
+    }
+
+    .mini-menu-button-open~.mini-menu-container{
+        display: block;
+    }
+
+    .mini-menu-container{
+        position: absolute;
+        display: none;
+        z-index: 50;
+        background-color: var(--primary-color);
+        width: 100%;
+        top: 92px;
+        margin: -10px;
+        min-height: 100vh;
+        transition: 0.2s;
+    }
+
+    .mini-menu-container a{
+        text-decoration: none;
+        color: var(--gray-color);
+        transition: 0.2s;
+    }
+
+    .mini-menu-container-list{
+        width: 100%;
+        color: var(--gray-color);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .mini-menu-container-list>li{
+        width: 100%;
+        height: max-content;
+        transition: 0.2s;
+        border-top: 1px solid var(--text-color);
+    } 
+    .mini-menu-container-list li:hover{
+        background-color: var(--white-color);
+        color: var(--text-color);
+    } 
+    .mini-menu-container-list li:hover a{
+        color: var(--text-color);
+    } 
+
+    .mini-account-section{
+        width: 100%;
+        background-color: var(--text-color);
+        display: flex;
+        padding: 2px 0;
+        justify-content: space-between;
+    }
+    
+    .mini-menu-container-list a,.mini-menu-container-list span{
+        padding: 20px 20px;
+        box-sizing: border-box;
+        height: max-content;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .mini-account-section a{
+        background-color: var(--white-color);
+        width: 50%;
+        text-align: center;
+        padding: 8px 12px;
+        margin: 0 1px;
+        color: var(--text-color);
+    }
+
+    .mini-menu-container-list span svg{
+        margin-left: 12px;
+        height: 16px;
+        pointer-events: none;
+    }
+
+    .mini-menu-container-item ul{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--white-color);
+        display: none;
+    }
+
+    .mini-menu-container-item-selected ul{
+        display: flex;
+    }
+
+    .mini-menu-container-item li{
+        width: 50%;
+        padding: 8px 0;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+    .mini-menu-container-item a{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        padding: 4px 12px;
+        color: var(--text-color);
+    }
+    .show-leagues-logo{
+        height: 20px;
+        margin-right: 4px;
+    }
+
+    .mini-menu-container-item img{
+        height: 100%;
+        pointer-events: none;
+    }
+
+    
+    .mini-menu-container-item li:hover{
+        background-color: var(--gray-color);
+    }
+
+    .filter-navbar{
+        background-color: transparent;
+        display: block;
+        position: relative;
+    }
+
+    .filter-navbar h2{
+        padding: 0;
+        display: block;
+        cursor: pointer;
+        width: max-content;
+    }
+
+    .filter-navbar h2 svg{
+        transform: none;
+        pointer-events: none;
+        transition: 0.2s;
+    }
+
+    h2.filter-navbar-open svg{
+        transform: rotateX(180deg);
+    }
+
+    h2~.filter-list{
+        display: none;
+    }
+    .filter-navbar-open~.filter-list{
+        display: block;
+    }
+
+    .filter-list{
+        position: absolute;
+        display: block;
+        max-width: max-content;
+        box-sizing: border-box;
+        border: 1px solid var(--blur-color);
+        background-color: var(--white-color);
+    }
+
+    .filter-item{
+        border: none;
+        padding: 8px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
+    .filter-item-selected{
+        background-color: var(--gray-color);
+    }
+    
+    .show-products-section{
+        margin: 0 -5px;
+    }
+    
     .show-products-item{
+        padding: 5px;
         width: 50%;
     }
 
@@ -631,6 +848,7 @@ ul{
     .service-item h5 svg{
         margin-left: 12px;
         display: inline-block;
+        pointer-events: none;
     }
 
     .service-item ul{
