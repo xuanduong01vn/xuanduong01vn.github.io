@@ -711,7 +711,7 @@ ul{
         justify-content: space-between;
     }
     
-    .mini-menu-container-list a,.mini-menu-container-list span{
+    .mini-menu-container-list a,.mini-menu-container-item-btn{
         padding: 20px 20px;
         box-sizing: border-box;
         height: max-content;
@@ -732,55 +732,69 @@ ul{
         margin-right: 2px;
     }
 
-    .mini-menu-container-item span svg{
+    .mini-menu-container-item-btn svg{
         margin-left: 12px;
         height: 16px;
         pointer-events: none;
         transition: 0.2s;
     }
 
-    .mini-menu-container-item ul{
+    .mini-menu-container-item-btn~.mini-menu-container-league-list{
+        display: none;
+        flex-wrap: wrap;
+        background-color: var(--white-color);
+    }
+
+    .mini-menu-container-item-btn-selected~.mini-menu-container-league-list{
         display: flex;
         flex-wrap: wrap;
         background-color: var(--white-color);
-        display: none;
     }
 
-    .mini-menu-container-item-selected span svg{
+
+    .mini-menu-container-item-selected .mini-menu-container-item-btn svg{
         transform: rotateX(180deg);
     }
 
-    .mini-menu-container-item-selected span~ul{
+    /* .mini-menu-container-item-btn ~ .mini-menu-container-league-list{
         display: flex;
+    } */
+
+    .mini-menu-container-item{
+        display: block;
     }
 
-    .mini-menu-container-item li{
+    .mini-menu-container-league-list li{
         width: 50%;
         padding: 8px 0;
         font-weight: 400;
         box-sizing: border-box;
+        cursor: pointer;
     }
 
-    .mini-menu-container-item a{
+    .mini-menu-container-league-list a{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         font-size: 16px;
         padding: 4px 12px;
         color: var(--text-color);
+        pointer-events: none;
     }
-    .show-leagues-logo{
+    .mini-show-leagues-logo{
         height: 20px;
         margin-right: 4px;
+        pointer-events: none;
     }
 
-    .mini-menu-container-item img{
+    .mini-menu-container-league-list img{
         height: 100%;
+        pointer-events: none;
         pointer-events: none;
     }
 
     
-    .mini-menu-container-item li:hover{
+    .mini-menu-container-league-list li:hover{
         background-color: var(--gray-color);
     }
 

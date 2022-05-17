@@ -29,21 +29,22 @@ serviceItemButton.forEach(function(item,index){
 document.querySelector(".mini-menu-button").onclick = function(e){
     e.target.classList.toggle("mini-menu-button-open");
 };
-
-if(document.querySelector(".mini-menu-button-open")){
-    document.querySelector(".container").style.position="fixed";
-}
-
 // xử lý mini menu
 
-document.querySelectorAll(".mini-menu-container-item span").forEach(function(item){
-    item.onclick=function(e){
-        if(document.querySelector(".mini-menu-container-item-selected")){
-            document.querySelector(".mini-menu-container-item-selected").classList.remove("mini-menu-container-item-selected");
+document.querySelectorAll(".mini-menu-container-item-btn").forEach(function(item){
+    item.onclick= function(e){
+        if(document.querySelector(".mini-menu-container-item-btn-selected")){
+            document.querySelector(".mini-menu-container-item-btn-selected").classList.remove("mini-menu-container-item-btn-selected");
         }
-        e.target.parentNode.classList.toggle(".mini-menu-container-item-selected");
+        e.target.classList.toggle("mini-menu-container-item-btn-selected");
     }
-});
+})
+
+document.querySelectorAll(".mini-menu-container-league-list li").forEach(function(item){
+    item.onclick=function(e){
+        document.querySelector(".mini-menu-button-open").classList.remove("mini-menu-button-open");
+    }
+})
 
 
 

@@ -19,8 +19,6 @@ document.querySelectorAll(".filter-item").forEach(function(item){
 
 var jerseyApi ='http://localhost:3000/jerseys';
 
-
-
 fetch(jerseyApi)
 .then(function (response){
     return response.json();
