@@ -712,7 +712,7 @@ ul{
     }
     
     .mini-menu-container-list a,.mini-menu-container-item-btn{
-        padding: 20px 20px;
+        padding: 16px 20px;
         box-sizing: border-box;
         height: max-content;
         display: block;
