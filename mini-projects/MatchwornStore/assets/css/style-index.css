@@ -749,6 +749,11 @@ ul{
         background-color: var(--white-color);
     }
 
+    .mini-menu-container-league-list{
+        max-height: 528px;
+        overflow-y: scroll;
+    }
+
     .mini-menu-container-item-btn-selected~.mini-menu-container-league-list{
         display: flex;
         flex-wrap: wrap;
