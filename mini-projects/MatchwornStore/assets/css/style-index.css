@@ -776,13 +776,13 @@ ul{
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        font-size: 16px;
+        font-size: 14px;
         padding: 4px 12px;
         color: var(--text-color);
         pointer-events: none;
     }
     .mini-show-leagues-logo{
-        height: 20px;
+        height: 16px;
         margin-right: 4px;
         pointer-events: none;
     }
