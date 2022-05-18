@@ -424,3 +424,93 @@ input[type="checkbox"]{
     background-color: var(--text-color);
     color: var(--gray-color);
 }
+
+
+
+
+@media (min-width:1401px) {
+    .main-section{
+        width: 1240px;
+        margin: 60px  auto 60px ;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+    .main-section{
+        max-width: 100%;
+        margin: 60px  80px;
+    }
+    .account-overview-line input{
+        width: 80%;
+    }
+
+    .save-btn{
+        width: 80%;
+    }
+    
+}
+
+@media (min-width:1023px) and (max-width:1200px) {
+    .main-section{
+        max-width: 100%;
+        margin: 60px  80px;
+    }
+
+    .account-overview-line input{
+        width: 80%;
+    }
+
+    .save-btn{
+        width: 80%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .main-section{
+        max-width: 100%;
+        margin: 60px  40px;
+    }
+
+    .account-menu{
+        margin-right: 40px;
+    }
+
+    .account-overview-line input{
+        width: 100%;
+    }
+
+    .save-btn{
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    .main-section{
+        max-width: 100%;
+        margin: 60px  10px;
+    }
+
+    .account-menu{
+        display: none;
+    }
+
+    .mini-menu-container-list>li:nth-child(2){
+        border-top: 1px solid var(--text-color);
+    }
+
+    .mini-menu-container-league-list li svg{
+        margin-right: 8px;
+    }
+
+    .mini-account-menu a{
+        pointer-events: all;
+    } 
+
+    .account-overview-line input{
+        width: 100%;
+    }
+
+    .save-btn{
+        width: 100%;
+    }
+}

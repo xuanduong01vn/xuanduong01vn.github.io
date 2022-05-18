@@ -108,11 +108,11 @@
 @media (min-width:701px) and (max-width: 879px) {
     .main-section{
         display: block;
-        margin: 240px 120px;
+        margin: 120px;
     }
 
     .main-section h1{
-        margin: 0 auto 32px;
+        margin: 0 auto;
         text-align: center;
     }
     .main-section h1 svg{
@@ -120,9 +120,23 @@
         pointer-events: none;
     }
 
+    .container-box{
+        margin-top: 32px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
     .login-section{
-        border: none;
+        border: 1px solid var(--text-color);
         margin-bottom: 60px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .register-section{
+        border: 1px solid var(--text-color);
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .section-heading~.container-box{
@@ -136,10 +150,10 @@
 @media (max-width: 700px) {
     .main-section{
         display: block;
-        margin: 240px 20px;
+        margin: 120px 10px;
     }
     .main-section h1{
-        margin: 0 auto 32px;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -152,9 +166,21 @@
         font-size: 16px;
     }
 
+    .container-box{
+        margin-top: 32px;
+    }
+
     .login-section{
-        border: none;
+        border: 1px solid var(--text-color);
         margin-bottom: 60px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .register-section{
+        border: 1px solid var(--text-color);
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .section-heading~.container-box{
