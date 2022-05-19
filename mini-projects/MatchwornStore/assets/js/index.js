@@ -1,17 +1,17 @@
-// xử lý ẩn hiện filter
+// xử lý ẩn hiện sort
 
-document.querySelector(".filter-navbar h2").onclick=function(e){
-    e.target.classList.toggle("filter-navbar-open");
+document.querySelector(".sort-navbar h2").onclick=function(e){
+    e.target.classList.toggle("sort-navbar-open");
 }
-// click filter item
+// click sort item
 
-document.querySelectorAll(".filter-item").forEach(function(item){
+document.querySelectorAll(".sort-item").forEach(function(item){
     item.onclick= function(e){
-        if(document.querySelector(".filter-item-selected")){
-            document.querySelector(".filter-item-selected").classList.remove("filter-item-selected");
+        if(document.querySelector(".sort-item-selected")){
+            document.querySelector(".sort-item-selected").classList.remove("sort-item-selected");
         }
-        document.querySelector(".filter-navbar h2").classList.toggle("filter-navbar-open");
-        e.target.classList.add("filter-item-selected");
+        document.querySelector(".sort-navbar h2").classList.toggle("sort-navbar-open");
+        e.target.classList.add("sort-item-selected");
     }
 });
 
