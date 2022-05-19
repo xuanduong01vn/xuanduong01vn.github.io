@@ -570,7 +570,9 @@ input[type="checkbox"]{
     .account-cart-action{
         width: 25%;
     }
-
+    .account-cart-bar div:nth-child(2){
+        width: 100%;
+    }
     .account-cart-bar div:nth-child(3){
         display: none;
     }
@@ -583,7 +585,6 @@ input[type="checkbox"]{
         display: block;
     }
     
-
     .account-order-products-item{
         flex-wrap: wrap;
     }
@@ -603,15 +604,14 @@ input[type="checkbox"]{
 
     .account-cart-total-bill{
         padding: 20px 10px;
-
     }
 
     .account-cart-total-money{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .account-cart-total-money span{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .save-btn{
