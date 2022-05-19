@@ -158,15 +158,25 @@ input:focus~label{
     padding: 20px 0;
 }
 
-.account-cart-overview>div:first-child{
+.account-cart-overview-checkbox{
     width: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.account-cart-overview-product{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
 .account-cart-products-overview{
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,13 +233,16 @@ input[type="checkbox"]{
     justify-content: center;
 }
 .account-cart-action-btn{
-    padding: 8px 24px;
+    padding: 8px auto;
     cursor: pointer;
     background-color: transparent;
     transition: 0.2s;
     font-weight: 700;
     color: var(--text-color);
     border: 1px solid var(--text-color);
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
 }
 .account-cart-action-btn:hover{
     background-color: var(--text-color);
@@ -433,6 +446,11 @@ input[type="checkbox"]{
         width: 1240px;
         margin: 60px  auto 60px ;
     }
+
+    .account-cart-action-btn{
+        width: 70%;
+    }
+
 }
 
 @media (min-width:1201px) and (max-width:1400px) {
@@ -447,7 +465,9 @@ input[type="checkbox"]{
     .save-btn{
         width: 80%;
     }
-    
+    .account-cart-action-btn{
+        width: 80%;
+    }
 }
 
 @media (min-width:1023px) and (max-width:1200px) {
@@ -479,6 +499,34 @@ input[type="checkbox"]{
         width: 100%;
     }
 
+    .account-cart-products-overview{
+        width: 100%;
+    }
+
+    .account-cart-products-price{
+        width: 25%;
+        margin-left: 158px;
+    }
+
+    .account-cart-action{
+        width: 25%;
+    }
+
+    .account-cart-bar div:nth-child(3){
+        display: none;
+    }
+    .account-cart-bar div:last-child{
+        display: none;
+    }
+    .account-order-products-item{
+        flex-wrap: wrap;
+    }
+
+    .account-order-products-price{
+        width: 100%;
+        display: block;
+    }
+    
     .save-btn{
         width: 100%;
     }
@@ -508,6 +556,62 @@ input[type="checkbox"]{
 
     .account-overview-line input{
         width: 100%;
+    }
+
+    .account-cart-products-overview{
+        width: 100%;
+    }
+
+    .account-cart-products-price{
+        width: 25%;
+        margin-left: 158px;
+    }
+
+    .account-cart-action{
+        width: 25%;
+    }
+
+    .account-cart-bar div:nth-child(3){
+        display: none;
+    }
+    .account-cart-bar div:last-child{
+        display: none;
+    }
+
+    .account-order-header{
+        width: 100%;
+        display: block;
+    }
+    
+
+    .account-order-products-item{
+        flex-wrap: wrap;
+    }
+
+    .account-cart-products-info{
+        padding-left: 10px;
+    }
+
+    .account-order-products-info{
+        padding: 0 10px;
+    }
+
+    .account-order-products-price{
+        width: 100%;
+        display: block;
+    }
+
+    .account-cart-total-bill{
+        padding: 20px 10px;
+
+    }
+
+    .account-cart-total-money{
+        font-size: 18px;
+    }
+
+    .account-cart-total-money span{
+        font-size: 28px;
     }
 
     .save-btn{
