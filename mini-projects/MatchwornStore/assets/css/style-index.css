@@ -282,7 +282,7 @@ ul{
     box-sizing: border-box;
 }
 
-.filter-navbar{
+.sort-navbar{
     background-color: var(--gray-color);
     box-sizing: border-box;
     display: flex;
@@ -291,21 +291,21 @@ ul{
     margin-bottom: 12px
 }
 
-.filter-navbar h2{
+.sort-navbar h2{
     min-width: max-content;
     padding: 12px 20px;
     display: block;
 }
 
-.filter-navbar h2 svg{
+.sort-navbar h2 svg{
     transform: rotateZ(270deg);
 }
 
-.filter-list{
+.sort-list{
     display: flex;
     width: 100%;
 }
-.filter-item{
+.sort-item{
     width: 20%;
     display: flex;
     cursor: pointer;
@@ -314,11 +314,11 @@ ul{
     border-bottom: 4px solid var(--text-color);
     transition: 0.2s;
 }
-.filter-item:hover{
+.sort-item:hover{
     background-color: var(--blur-color);
 }
 
-.filter-item-selected{
+.sort-item-selected{
     border-bottom: 4px solid var(--light-color);
     color: var(--light-color);
 }
@@ -504,12 +504,12 @@ ul{
         margin: 40px auto 0;
     }
     
-    .filter-navbar h2{
+    .sort-navbar h2{
         min-width: max-content;
         padding: 12px 20px;
     }
     
-    .filter-item{
+    .sort-item{
         padding: 12px 0;
         font-size: 20px;
     }
@@ -540,11 +540,11 @@ ul{
         margin: 40px 80px;
     }
 
-    .filter-navbar h2{
+    .sort-navbar h2{
         display: none;
     }
     
-    .filter-item{
+    .sort-item{
         padding: 8px 0;
         font-size: 18px;
     }
@@ -582,11 +582,11 @@ ul{
         max-width: 100%;
         margin: 40px 40px;
     }
-    .filter-navbar h2{
+    .sort-navbar h2{
         display: none;
     }
     
-    .filter-item{
+    .sort-item{
         padding: 8px 0;
         font-size: 16px;
     }
@@ -798,37 +798,37 @@ ul{
         background-color: var(--gray-color);
     }
 
-    .filter-navbar{
+    .sort-navbar{
         background-color: transparent;
         display: block;
         position: relative;
     }
 
-    .filter-navbar h2{
+    .sort-navbar h2{
         padding: 0;
         display: block;
         cursor: pointer;
         width: max-content;
     }
 
-    .filter-navbar h2 svg{
+    .sort-navbar h2 svg{
         transform: none;
         pointer-events: none;
         transition: 0.2s;
     }
 
-    h2.filter-navbar-open svg{
+    h2.sort-navbar-open svg{
         transform: rotateX(180deg);
     }
 
-    h2~.filter-list{
+    h2~.sort-list{
         display: none;
     }
-    .filter-navbar-open~.filter-list{
+    .sort-navbar-open~.sort-list{
         display: block;
     }
 
-    .filter-list{
+    .sort-list{
         position: absolute;
         display: block;
         max-width: max-content;
@@ -837,7 +837,7 @@ ul{
         background-color: var(--white-color);
     }
 
-    .filter-item{
+    .sort-item{
         border: none;
         padding: 8px 20px;
         width: 100%;
@@ -845,7 +845,7 @@ ul{
         justify-content: flex-start;
     }
 
-    .filter-item-selected{
+    .sort-item-selected{
         background-color: var(--gray-color);
     }
     
