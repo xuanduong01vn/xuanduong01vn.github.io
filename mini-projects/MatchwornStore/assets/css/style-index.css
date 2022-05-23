@@ -288,17 +288,22 @@ ul{
     display: flex;
     width: 100%;
     color: var(--text-color);
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    align-items: center;
 }
 
 .sort-navbar h2{
-    min-width: max-content;
-    padding: 12px 20px;
-    display: block;
+    width: max-content;
+    padding: 0 20px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    height: 100%;
 }
 
 .sort-navbar h2 svg{
     transform: rotateZ(270deg);
+    margin-left: 12px;
 }
 
 .sort-list{
