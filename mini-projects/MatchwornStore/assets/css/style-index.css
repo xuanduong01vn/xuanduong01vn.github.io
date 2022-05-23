@@ -488,6 +488,7 @@ ul{
     margin-top: 40px;
 }
 
+
 @media (min-width:1401px) {
     .header-section-first{
         width:1240px;
@@ -578,6 +579,8 @@ ul{
         margin: 0 40px;
     }
 
+    
+
     .main-section{
         max-width: 100%;
         margin: 40px 40px;
@@ -660,7 +663,7 @@ ul{
     }
 
     .mini-menu-container{
-        position: absolute;
+        position: fixed;
         display: none;
         z-index: 50;
         background-color: var(--primary-color);

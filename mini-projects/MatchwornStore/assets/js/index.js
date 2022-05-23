@@ -17,7 +17,7 @@ document.querySelectorAll(".sort-item").forEach(function(item){
 
 // load sản phẩm lên giao diện
 
-var jerseyApi ='http://localhost:3000/jerseys';
+var jerseyApi ='./assets/file/json/jerseys.json';
 
 fetch(jerseyApi)
 .then(function (response){

@@ -30,12 +30,12 @@ document.querySelector(".mini-menu-button").onclick = function(e){
     e.target.classList.toggle("mini-menu-button-open");
 };
 
-if(document.querySelector(".mini-menu-button-open")){
-    document.querySelector("body").style.position="fixed";
-}
-else{
-    document.querySelector("body").style.position="relative";
-}
+// if(document.querySelector(".mini-menu-button-open")){
+//     document.querySelector("body").style.position="fixed";
+// }
+// else{
+//     document.querySelector("body").style.position="relative";
+// }
 // xử lý mini menu
 
 document.querySelectorAll(".mini-menu-container-item-btn").forEach(function(item){
