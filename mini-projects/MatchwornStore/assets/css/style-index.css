@@ -475,7 +475,7 @@ ul{
 }
 
 .service-item a,.service-item p{
-    color: var(--white-color);
+    color: var(--blur-color);
     transition: 0.2s;
     line-height: 1.8;
 }
