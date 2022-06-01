@@ -1,0 +1,900 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Nunito';
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* The rule below is not implemented in browsers yet */
+    -o-user-select: none;
+
+     /* The rule below is implemented in most browsers by now */
+    user-select: none;
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--light-color); 
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color); 
+  }
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #496379;
+    --blur-color: #d2dadf;
+    --primary-color: #082032;
+    --eighty-percent: 80%;
+    --light-color:#FF4C29;
+    --gray-color:#ececec;
+}
+
+.container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header-section{
+    width:100%;
+    height: 80px;
+    position: fixed;
+    background-color: var(--white-color);
+    z-index:100;
+}
+
+.header-section-first{
+    /* width:1240px;
+    margin: 0 auto; */
+    height:100%;
+}
+.header-section-first-navbar{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.logo-section{
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.mini-menu-button{
+    width: max-content;
+    height: max-content;
+    margin: auto 0;
+    color: var(--text-color);
+    display: none;
+}
+
+.mini-menu-button svg{
+    width: 32px;
+    height: 32px;
+    transition: 0.2s;
+}
+
+.account-section{
+    display: flex;
+    align-items: center;
+    margin-right: -12px;
+}
+
+.account-section a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.account-section a:hover{
+    text-decoration:  underline;
+    color: var(--light-color);
+}
+
+.mini-menu-container{
+    display: none;
+}
+
+.header-section-second{
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 40px;
+}
+
+.header-section-second-navbar{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.list-categories{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    color: var(--white-color);
+}
+.list-categories li{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.list-categories span{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.list-categories svg{
+    margin-left: 8px;
+    transition: 0.2s;
+}
+
+.list-categories li:hover svg{
+    transform: rotateX(180deg);
+}
+
+.list-categories a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.list-categories li:hover{
+    background-color: var(--gray-color);
+    color: var(--text-color);
+}
+.list-categories li:hover a{
+    color: var(--text-color);
+}
+
+.list-categories li:hover .show-leagues{
+    display: block;
+}
+
+.show-leagues{
+    background-color: var(--gray-color);
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    width: max-content;
+    border: 1px solid var(--blur-color);
+    border-top: none;
+    z-index: 10;
+    display: none;
+    transition: 0.2s;
+}
+
+.show-leagues a{
+    color: var(--text-color);
+    cursor: pointer;
+}
+.show-leagues-logo{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+.show-leagues-logo img{
+    height: 100%;
+}
+
+.show-leagues li{
+    line-height: 2.4;
+    width: 100%;
+}
+.show-leagues li:hover{
+    background-color: var(--white-color);
+    
+}
+
+.show-leagues li:hover a{
+    color: var(--light-color);
+}
+
+.search-section{
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-section input{
+    outline: none;
+    border: none;
+    padding: 0 40px 0 20px;
+    height: 80%;
+    width: 240px;
+    border-radius: 16px;
+}
+
+.search-section input::placeholder{
+    color: var(--text-color);
+}
+
+.search-section button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    height: 24px;
+}
+.search-section button svg{
+    color: var(--text-color);
+}
+
+.trailer-section{
+    width:100%;
+    margin-top: 120px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer-section video{
+    width: 100%;
+}
+
+.main-section{
+    box-sizing: border-box;
+}
+
+.sort-navbar{
+    background-color: var(--gray-color);
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.sort-navbar h2{
+    width: max-content;
+    padding: 0 20px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    height: 100%;
+}
+
+.sort-navbar h2 svg{
+    transform: rotateZ(270deg);
+    margin-left: 12px;
+}
+
+.sort-list{
+    display: flex;
+    width: 100%;
+}
+.sort-item{
+    width: 20%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid var(--text-color);
+    transition: 0.2s;
+}
+.sort-item:hover{
+    background-color: var(--blur-color);
+}
+
+.sort-item-selected{
+    border-bottom: 4px solid var(--light-color);
+    color: var(--light-color);
+}
+.amount-jerseys-line{
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.show-products-section{
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.show-products-item{
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: max-content;
+}
+
+.product-item-image{
+    width: 100%;
+    background-color: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.product-item-image:hover img{
+    width: 90%;
+    margin: 5%;
+}
+.product-item-image img{
+    width: 100%;
+    transition: 0.2s;
+}
+.product-item-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.product-item-info{
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+
+
+.product-item-nameset{
+    font-weight: 800;
+}
+
+.footer-section{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 64px 0;
+}
+
+/* .footer-container{
+    width: 1240px;
+    margin: 0 auto;
+} */
+
+.social-container{
+    width: 100%;
+    height: 60px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.web-container{
+    height: 100%;
+}
+
+.web-container img{
+    height: 100%;
+}
+
+.social-list{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.social-list a{
+    height: 28px;
+    width: 28px;
+    margin-left: 12px;
+    border: solid 8px var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.social-list a:hover{
+    border: solid 8px var(--light-color);
+}
+
+.social-list a svg{
+    color: var(--text-color);
+    width: 36px;
+    height: 36px;
+    transition: 0.2s;
+}
+
+.social-list a:hover svg{
+    color: var(--light-color);
+}
+
+.service-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.service-item{
+    color: var(--gray-color);
+}
+
+.service-item h5{
+    padding: 12px 0;
+    width: max-content;
+    pointer-events: none;
+}
+
+.service-item-selected svg{
+    transform: rotateX(180deg);
+}
+
+.service-item h5 svg{
+    margin-left: 12px;
+    display: none;
+    transition: 0.2s;
+}
+
+.service-item ul{
+    list-style: none;
+    color: var(--gray-color);
+    transition: 0.2s;
+}
+
+.service-item a,.service-item p{
+    color: var(--blur-color);
+    transition: 0.2s;
+    line-height: 1.8;
+}
+.service-item li a{
+     text-decoration: none;
+}
+
+.service-item a:hover{
+    color: var(--light-color);
+}
+
+.copyright-container{
+    color: var(--gray-color);
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+@media (min-width:1401px) {
+    .header-section-first{
+        width:1240px;
+        margin: 0 auto;
+    }
+
+    .header-section-second-navbar{
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    .main-section{
+        width: 1240px;
+        margin: 40px auto 0;
+    }
+    
+    .sort-navbar h2{
+        min-width: max-content;
+        padding: 12px 20px;
+    }
+    
+    .sort-item{
+        padding: 12px 0;
+        font-size: 20px;
+    }
+
+    .show-products-item{
+        width: 20%;
+    }
+
+    .footer-container{
+        width: 1240px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1400px) {
+    .header-section-first{
+        max-width:100%;
+        margin: 0 80px;
+    }
+
+    .header-section-second-navbar{
+        max-width: 100%;
+        margin: 0 80px;
+    }
+
+    .main-section{
+        max-width: 100%;
+        margin: 40px 80px;
+    }
+
+    .sort-navbar h2{
+        display: none;
+    }
+    
+    .sort-item{
+        padding: 8px 0;
+        font-size: 18px;
+    }
+
+    .show-products-item{
+        width: 25%;
+    }
+
+    .footer-container{
+        max-width: 100%;
+        margin: 0 80px;
+    }
+}
+
+@media(min-width:1024px) {
+    .service-item{
+        width: 25%;
+    }
+    .service-item h5{
+        font-size: 18px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .header-section-first{
+        max-width:100%;
+        margin: 0 40px;
+    }
+
+    .header-section-second-navbar{
+        max-width: 100%;
+        margin: 0 40px;
+    }
+
+    
+
+    .main-section{
+        max-width: 100%;
+        margin: 40px 40px;
+    }
+    .sort-navbar h2{
+        display: none;
+    }
+    
+    .sort-item{
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .show-products-item{
+        width: 33.33333%;
+    }
+
+    .service-item{
+        width: 33.33333%;
+    }
+
+    .service-item h5{
+        font-size: 16px;
+    }
+    .footer-container{
+        max-width: 100%;
+        margin: 0 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .header-section-first{
+        max-width:100%;
+        margin: 0 10px;
+    }
+
+    .header-section-second-navbar{
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .main-section{
+        max-width: 100%;
+        margin: 40px 10px;
+    }
+
+    .mini-menu-button{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .mini-menu-button svg{
+        pointer-events: none;
+    }
+
+    .mini-menu-button-open svg{
+        transform: rotateX(180deg);
+    }
+
+    .account-section{
+        display: none;
+    }
+
+    .header-section-second-navbar{
+        justify-content: flex-end;
+    }
+
+    .list-categories{
+        display: none;
+    }
+
+    .search-section{
+        width: 100%;
+    }
+    .search-section input{
+        width: 100%;
+    }
+
+    .mini-menu-button-open~.mini-menu-container{
+        display: block;
+    }
+
+    .mini-menu-container{
+        position: fixed;
+        display: none;
+        z-index: 50;
+        background-color: var(--primary-color);
+        width: 100%;
+        top: 90px;
+        margin: -10px;
+        min-height: 100vh;
+        transition: 0.2s;
+    }
+
+    .mini-menu-container a{
+        text-decoration: none;
+        color: var(--gray-color);
+        transition: 0.2s;
+    }
+
+    .mini-menu-container-list{
+        width: 100%;
+        color: var(--gray-color);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .mini-menu-container-list>li{
+        width: 100%;
+        height: max-content;
+        transition: 0.2s;
+        border-top: 1px solid var(--text-color);
+    }
+    
+    .mini-menu-container-list li:first-child,.mini-menu-container-list li:nth-child(2){
+        border: none;
+    }
+    
+    .mini-menu-container-item-btn-selected{
+        background-color: var(--white-color);
+        color: var(--text-color);
+    } 
+    .mini-menu-container-list>li:hover>a{
+        color: var(--light-color);
+    } 
+
+    .mini-account-section{
+        width: 100%;
+        background-color: var(--text-color);
+        display: flex;
+        padding: 2px 0;
+        justify-content: space-between;
+    }
+    
+    .mini-menu-container-list a,.mini-menu-container-item-btn{
+        padding: 16px 20px;
+        box-sizing: border-box;
+        height: max-content;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .mini-account-section a{
+        background-color: var(--white-color);
+        width: 50%;
+        text-align: center;
+        padding: 8px 12px;
+        color: var(--text-color);
+    }
+    .mini-account-section a:first-child{
+        margin-right: 2px;
+    }
+
+    .mini-menu-container-item-btn svg{
+        margin-left: 12px;
+        height: 16px;
+        pointer-events: none;
+        transition: 0.2s;
+        pointer-events: none;
+    }
+    
+    .mini-menu-container-item-btn-selected svg{
+        transform: rotateX(180deg);
+    }
+
+    .mini-menu-container-item-btn~.mini-menu-container-league-list{
+        display: none;
+        flex-wrap: wrap;
+        background-color: var(--white-color);
+    }
+
+    .mini-menu-container-league-list{
+        max-height: 192px;
+        overflow-y: scroll;
+    }
+
+    .mini-menu-container-item-btn-selected~.mini-menu-container-league-list{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--white-color);
+    }
+
+    .mini-menu-container-item{
+        display: block;
+    }
+
+    .mini-menu-container-league-list li{
+        width: 50%;
+        padding: 8px 0;
+        font-weight: 400;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .mini-menu-container-league-list a{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        padding: 4px 12px;
+        color: var(--text-color);
+        pointer-events: none;
+    }
+    .mini-show-leagues-logo{
+        height: 16px;
+        margin-right: 4px;
+        pointer-events: none;
+    }
+
+    .mini-menu-container-league-list img{
+        height: 100%;
+        pointer-events: none;
+        pointer-events: none;
+    }
+
+    
+    .mini-menu-container-league-list li:hover{
+        background-color: var(--gray-color);
+    }
+
+    .sort-navbar{
+        background-color: transparent;
+        display: block;
+        position: relative;
+    }
+
+    .sort-navbar h2{
+        padding: 0;
+        display: block;
+        cursor: pointer;
+        width: max-content;
+    }
+
+    .sort-navbar h2 svg{
+        transform: none;
+        pointer-events: none;
+        transition: 0.2s;
+    }
+
+    h2.sort-navbar-open svg{
+        transform: rotateX(180deg);
+    }
+
+    h2~.sort-list{
+        display: none;
+    }
+    .sort-navbar-open~.sort-list{
+        display: block;
+    }
+
+    .sort-list{
+        position: absolute;
+        display: block;
+        max-width: max-content;
+        box-sizing: border-box;
+        border: 1px solid var(--blur-color);
+        background-color: var(--white-color);
+    }
+
+    .sort-item{
+        border: none;
+        padding: 8px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
+    .sort-item-selected{
+        background-color: var(--gray-color);
+    }
+    
+    .show-products-section{
+        margin: 0 -5px;
+    }
+    
+    .show-products-item{
+        padding: 5px;
+        width: 50%;
+    }
+
+    .service-item{
+        width: 100%;
+    }
+
+    .service-item h5{
+        font-size: 16px;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .service-item h5:last-child{
+        cursor: none;
+        pointer-events: none;
+    }
+
+    .service-item h5 svg{
+        margin-left: 12px;
+        display: inline-block;
+        pointer-events: none;
+    }
+
+    .service-item ul{
+        display: none;
+    }
+
+    .footer-container{
+        max-width: 100%;
+        margin: 0 10px;
+    }
+}
+
+
+

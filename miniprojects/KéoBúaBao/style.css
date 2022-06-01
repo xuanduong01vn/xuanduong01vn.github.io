@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: palevioletred;
+  border-radius: 50px;
+}
+
+.logo-section {
+  width: 300px;
+  margin: 0 auto;
+}
+.logo-section img {
+  width: 100%;
+}
+
+.main-section {
+  width: 100%;
+  background-color: pink;
+  border-radius: 40px;
+  height: 500px;
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+.player-side,
+.bot-side {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.player-side > div,
+.bot-side > div {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-side p,
+.bot-side p {
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: palevioletred;
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.main-section img {
+  height: 100%;
+}
+
+.message-content {
+  z-index: 10;
+  top: 86%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  color: palevioletred;
+  font-weight: 800;
+  position: absolute;
+  transition: 1.5s;
+}
+
+.action-section {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.action-section > div {
+  height: 100%;
+  width: 100px;
+  background-color: pink;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.action-section > div > img {
+  height: 80%;
+  transition: 0.3s;
+}
+
+.action-section > div:hover {
+  background-color: plum;
+}
+
+.action-section > .action:hover > img {
+  height: 100%;
+}
